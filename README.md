@@ -22,7 +22,6 @@ A aplicação se trata do desenvolvimento web de uma livraria, em estágio inici
 
 ### Detalhes:
 - **Models:** Livro, Autor, Genero, Editora, Venda, Client
-duration, listed_in, description
 - Toda a documentação do projeto está presente dentro do próprio código, ou através de arquivos .txt nas pastas da aplicação!
 
 
