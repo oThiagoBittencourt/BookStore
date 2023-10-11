@@ -1,0 +1,8 @@
+﻿Através do Services, é feito uma melhor modularização do código.
+A utilização de Interfaces causa ao código presente nos controllers,
+melhor visibilidade. E permite uma melhor e mais facil manipulação dos
+métodos CRUD, possibilitando a inserção de diferentes referencias à
+mesma interface, através do Build.
+
+As Interfaces (I{nome}Service) e as aplicações ({nome}Service), estão sendo conectadas
+através do Build presente em Program.cs

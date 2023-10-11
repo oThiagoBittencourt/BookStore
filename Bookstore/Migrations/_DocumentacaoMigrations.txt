@@ -1,0 +1,2 @@
+﻿Nas migrations, está presente toda a evolução da construção e manipulação
+o banco de dados do Sql Server, possuindo cada atualização, um nome sugestivo.

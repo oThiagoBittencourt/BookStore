@@ -1,0 +1,4 @@
+﻿As models apresentam em todas, a atribuição de uma PrimaryKey Id,
+Propriedades comuns (tomando cautela com possivel valores nulos e encapsulamento)
+como Nome, Valor, Estoque... Além da conexão entre as tabelas através das ForeignKeys,
+com casos de (1:1), (1:n) e (n:n)

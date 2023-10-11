@@ -1,0 +1,63 @@
+﻿Nas Controllers, é realizada primeiramente a conexão com a interface da classe corresondente,
+e, logo em seguida, a apliacação de cada um dos processos de CRUD (Criar, ler, atualizar e deletar).
+As interfaces podem retornar as buscas com valores e resultar em um 200(Ok), ou nulo 404(NotFound).
+
+Para a geração das estruturas de CRUD, foi utilizado a assistência da IA (ChatGPT), adaptando
+o resultado com o sistemas de Services:
+
+Pedido:
+"Gere um CRUD completo em C# com métodos assíncronos e interiores vazios, para se usar com Swagger"
+
+Resposta:
+
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+[Route("api/[controller]")]
+[ApiController]
+public class EntityController : ControllerBase
+{
+    // Corpo vazio, você deve implementar a lógica de injeção de dependência aqui
+
+    [HttpPost]
+    [ProducesResponseType(201, Type = typeof(Entity))]
+    public async Task<IActionResult> CreateAsync([FromBody] Entity entity)
+    {
+        // Corpo vazio, você deve implementar a lógica de criação aqui
+        return CreatedAtAction("GetEntity", new { id = entity.Id }, entity);
+    }
+
+    [HttpGet]
+    [ProducesResponseType(200, Type = typeof(List<Entity>))]
+    public async Task<IActionResult> ReadAsync()
+    {
+        // Corpo vazio, você deve implementar a lógica de leitura aqui
+        return Ok(new List<Entity>());
+    }
+
+    [HttpGet("{id}")]
+    [ProducesResponseType(200, Type = typeof(Entity))]
+    public async Task<IActionResult> GetEntity(int id)
+    {
+        // Corpo vazio, você deve implementar a lógica de busca por ID aqui
+        return Ok(new Entity());
+    }
+
+    [HttpPut("{id}")]
+    [ProducesResponseType(204)]
+    public async Task<IActionResult> UpdateAsync(int id, [FromBody] Entity entity)
+    {
+        // Corpo vazio, você deve implementar a lógica de atualização aqui
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    [ProducesResponseType(204)]
+    public async Task<IActionResult> DeleteAsync(int id)
+    {
+        // Corpo vazio, você deve implementar a lógica de exclusão aqui
+        return NoContent();
+    }
+}
