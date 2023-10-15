@@ -5,6 +5,9 @@
 
 **Projeto acadêmico que visa desenvolver o API Backend de uma livraria utilizando o Entity Framework**
 
+### Vídeo:
+[YouTube Video](https://youtu.be/ZO2Ld26SM6o)
+
 ### Sobre o Projeto:
 A aplicação se trata do desenvolvimento web de uma livraria, em estágio inicial de Backend. A API apresenta até o momento: estruturação MVC básica, CRUD das entidades, conexão com SQL Server utilizando o Entity Framewor, padrão de repositório e DI.
 
@@ -21,7 +24,7 @@ A aplicação se trata do desenvolvimento web de uma livraria, em estágio inici
 - Chat GPT
 
 ### Detalhes:
-- **Models:** Livro, Autor, Genero, Editora, Venda, Client
+- **Models:** Livro, Autor, Genero, Editora, Venda, Cliente
 - Toda a documentação do projeto está presente dentro do próprio código, ou através de arquivos .txt nas pastas da aplicação!
 
 
